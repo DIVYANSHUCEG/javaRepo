@@ -42,7 +42,7 @@ public class First {
 	 * The main method.
 	 *
 	 * @param args the arguments
-	 */
+	 */   
 	public static void main(String... args){
 		logger.info(getFirstName()+"  "+getLastName());
 	}
