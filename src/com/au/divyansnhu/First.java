@@ -5,19 +5,18 @@ package com.au.divyansnhu;
 
 import java.util.logging.Logger;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class First.
  */
 public class First {
-	  private static final String FIRST_NAME_IS = "First Name is ";
-	private static final String LAST_NAME_IS = "Last Name is ";
-	private static Logger logger = Logger.getLogger("First");  
 	/** The first name. */
 	private static final String FIRST_NAME = "Divyanshu";
 	
 	/** The last name. */
 	private static final String LAST_NAME = "Kumar";
+	private static final String FIRST_NAME_IS = "First Name is "+FIRST_NAME;
+	private static final String LAST_NAME_IS = "Last Name is "+LAST_NAME;
+	private static Logger logger = Logger.getLogger("First");  
 	
 	/**
 	 * Gets the first name.
@@ -25,7 +24,7 @@ public class First {
 	 * @return the first name
 	 */
 	private static  String getFirstName(){
-		logger.info(FIRST_NAME_IS+ FIRST_NAME);
+		logger.info(FIRST_NAME_IS);
 		return FIRST_NAME;
 	}
 	
@@ -35,7 +34,7 @@ public class First {
 	 * @return the last name
 	 */
 	private static  String getLastName(){
-		logger.info(LAST_NAME_IS + LAST_NAME);
+		logger.info(LAST_NAME_IS);
 		return LAST_NAME;
 	}
 	
@@ -45,6 +44,6 @@ public class First {
 	 * @param args the arguments
 	 */
 	public static void main(String... args){
-		System.out.println(getFirstName()+"  "+getLastName());
+		logger.info(getFirstName()+"  "+getLastName());
 	}
 }
