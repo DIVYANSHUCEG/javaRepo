@@ -1,3 +1,4 @@
+package com.au.divyansnhu;
 
 public class First {
 	private static String FIRST_NAME = "Divyanshu";
